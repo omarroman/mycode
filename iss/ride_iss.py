@@ -18,4 +18,8 @@ print(helmetson)
 
 print("\n\nPeople in Space: ", helmetson['number'])
 people = helmetson['people']
-print(people)
+#print(people)
+
+for peeplist in people:
+    #print(peeplist)
+    print( "{} is on the {}".format(peeplist['name'], peeplist['craft']))
