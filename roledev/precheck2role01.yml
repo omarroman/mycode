@@ -18,7 +18,7 @@
 
   - name: Push to the local system -- by special tag request only 
     copy:
-      # use the to_nice_json filter to display pretty json output
+      # use the to_no_json filter to display pretty json output
       content: "{{ ansible_facts | to_nice_json }}"
       dest: "/home/student/mycode/{{ inventory_hostname }}.txt"
       # the inventory_hostname variable always resolves to the current host being iterated against
